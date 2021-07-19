@@ -18,8 +18,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
     fetchData();
   }, [fetchUrl]);
 
-  console.log(movies);
-
   return (
     <Category>
       <h2>{title}</h2>
@@ -42,6 +40,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 export default Row;
 
 const Category = styled.div`
+  color: white;
   margin-left: 20px;
 `;
 
